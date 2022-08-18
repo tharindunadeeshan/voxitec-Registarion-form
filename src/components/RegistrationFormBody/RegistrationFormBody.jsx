@@ -1,5 +1,6 @@
 import React from 'react'
-import './RegistrationFormBody.css'
+import RegisterFormCss from  './RegistrationFormBody.module.css'
+
 import 'font-awesome/css/font-awesome.min.css';
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -8,74 +9,74 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 const RegistrationFormBody = () => {
   return (
     
-<div class="container">
+<div className={RegisterFormCss.container}>
 
 <form action="">
 
-    <div class="row">
+    <div  className={RegisterFormCss.row}>
 
-        <div class="col">
+        <div className={RegisterFormCss.col}>
 
-            <h3 class="title">Register</h3>
+            <h3 className={RegisterFormCss.title}>Register</h3>
 
-            <div class="Login-link">
+            <div className={RegisterFormCss.loginLink}>
          <p> Have an Account? <a href="#">Login</a></p>
       </div>
-      <h3 className='perso-title-text'>Personal Details</h3>
+      <h3 className={RegisterFormCss.persoTitleText}>Personal Details</h3>
 
             <div class="flex">
-                <div class="inputBox">
+                <div className={RegisterFormCss.inputBox}>
                     <span>First Name </span>
                     <input type="text" />
                 </div>
-                <div class="inputBox">
+                <div   className={RegisterFormCss.inputBox}>
                     <span>Last Name</span>
                     <input type="text" />
                 </div>
             </div>
 
 
-            <div class="inputBox">
+            <div className={RegisterFormCss.inputBox}>
                 <span>User Name</span>
                 <input type="text"/>
             </div>
-            <div class="inputBox">
+            <div className={RegisterFormCss.inputBox}>
                 <span>Email  </span>
                 <input type="email" />
             </div>
-            <div class="inputBox">
+            <div className={RegisterFormCss.inputBox}>
                 <span>Phone Number </span>
                 <input type="text"/>
             </div>
             
              </div>
 
-             <div class="vl"></div>
+             <div className={RegisterFormCss.vl}></div>
 
-        <div class="col">
+        <div className={RegisterFormCss.col}>
 
            
-        <h3 className='title-pass'>Password</h3>
-        <div class="inputBox">
+        <h3 className={RegisterFormCss.titlePass}>Password</h3>
+        <div className={RegisterFormCss.inputBox}>
                 <span>Password </span>
                 <input type="pass"/>
             </div>
-            <div class="inputBox">
+            <div className={RegisterFormCss.inputBox}>
                 <span>Confirm Password</span>
                 <input type="pass" />
             </div>
-            <p className='two-fact-text'>Two Factor autentication
+            <p className={RegisterFormCss.twoFactText}>Two Factor autentication
 
             <label class="switch">
   <input type="checkbox"/>
   <span class="slider round"></span>
 </label>
             </p>
-            <input type="submit" value="Create Account" class="submit-btn"/>
+            <input type="submit" value="Create Account" className={RegisterFormCss.submitBtn}/>
 
-            <p className='or-cont-text'>Or continue with the following options</p>
+            <p className={RegisterFormCss.orContText}>Or continue with the following options</p>
           
-            <div className="social-media-icon">
+            <div className={RegisterFormCss.sociaMediaIcon}>
       
     <ul>
          <li><i class="fa fa-facebook-f"></i></li>
