@@ -8,7 +8,7 @@ import { CreatePassword } from "./components/Createpassword/CreatePassword";
 function App() {
   return (
     <div className="App">
-      <RegistrationForm />
+      <LoginForm />
     </div>
   );
 }
