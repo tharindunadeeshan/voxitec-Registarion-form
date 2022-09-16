@@ -1,210 +1,191 @@
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body{
-  display: flex;
-  
-  min-height: 100vh;
-  background-size: 100%;
-  background-attachment: fixed;
+.BackgroundImagecontainer img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/src/images/bg.png);
 }
 
-
-.container{
-  margin-top: 90px;
-  margin-left: 70px;
-
-  background:
-  #303137;
- 
+.MAinContariner {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.Recontainer {
+  grid-column: 1/7;
+  margin-left: 60px;
+  margin-top: 220px;
+  background: #303137;
   padding: 25px 40px 10px 40px;
-  box-shadow: 0px 0px 10px 
-  #303137;
+  box-shadow: 0px 0px 10px #303137;
   display: flex;
   border-radius: 25px;
- 
 }
 
-.container form{
-padding:20px;
-width:700px;
-background: #303137;;
-box-shadow: none;
+.Recontainer form {
+  padding: 20px;
+  width: 700px;
+  background: #303137;
+  box-shadow: none;
 }
 
-.container form .row{
-display: flex;
-flex-wrap: wrap;
-gap:15px;
+.Recontainer form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.container form .row .col{
-flex:1 1 250px;
+.Recontainer form .row .col {
+  flex: 1 1 250px;
 }
 
-.container form .row .col .title{
-font-size: 20px;
-color:rgb(255, 255, 255);
-padding-bottom: 5px;
-text-transform: uppercase;
+.Recontainer form .row .col .title {
+  font-size: 1.6vm;
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
-.container form .row .col .titlePass{
-font-size: 15px;
-color:rgb(255, 255, 255);
-padding-bottom: 5px;
-text-transform: uppercase;
-font-family: 'Poppins';
-font-style: normal;
+.Recontainer form .row .col .titlePass {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-style: normal;
 }
-.container form .row .col .persoTitleText{
-font-size: 15px;
-color:rgb(255, 255, 255);
-padding-bottom: 5px;
-text-transform: uppercase;
-font-family: 'Poppins';
-font-style: normal;
-}
-
-.container form .row .col .inputBox{
-margin:15px 0;
-}
-
-.container form .row .col .inputBox span{
-margin-bottom: 10px;
-display: block;
-color: #fff;
-}
-
-.container form .row .col .inputBox input{
-width: 100%;
-border:1px solid #ccc;
-padding:10px 15px;
-font-size: 15px;
-text-transform: none;
-border-radius: 4px;
-background:  #303137;
-color: #fff;
-}
-
-.container form .row .col .inputBox input:focus{
-border:1px solid rgb(255, 255, 255);
-}
-
-.container form .row .col .flex{
-display: flex;
-gap:15px;
-}
-
-.container form .row .col .flex .inputBox{
-margin-top: 2px;
-}
-
-
-
-.container form .submitBtn{
-width: 100%;
-padding:12px;
-font-size: 17px;
-border: #2D6CF9;
-margin-top: 5px;
-cursor: pointer;
-background: #2D6CF9;
-box-shadow: 0px 2px 20px rgba(21, 130, 222, 0.89);
-border-radius: 10px;
-color: #fff;
-}
-
-.container form .submitBtn:hover{
-background: #2D6CF9;
-box-shadow: 0px 2px 40px rgba(21, 130, 222, 0.89);
-}
-
-
-
-.sociaMediaIcon ul{
-
-margin-top: 10px;
-margin-left: 80px;
-align-items: center;
-
-}
-
-.sociaMediaIcon ul li {
-display: inline-block;
-border: 1px solid #fff;
-width: 40px;
-height: 40px;
-padding-top: 5px;
-
-margin-left: 15px;
-text-align: center;
-
-font-size: 1.3rem;
-border-radius: 5px;
-color: #fff;
-
-
-}
-
-.vl {
-height: 520px;
- border-left: 2px dotted #fff;
-}
-
-
-.loginLink p{
-color: #fff;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-margin-bottom: 10px;
-}
-.loginLink a{
-color:
-#47ACDF;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-}
-
-
-.orContText{
-margin-top: 20px;
-  color: #fff;
-  text-align: center;
-}
-.twoFactText{
-margin-top: 20px;
-  color: #fff;
-  text-align: left;
-  margin-bottom: 20px;
-  font-family: 'Poppins';
+.Recontainer form .row .col .persoTitleText {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "Poppins";
   font-style: normal;
 }
 
+.Recontainer form .row .col .inputBox {
+  margin: 15px 0;
+}
 
-.switch {
-margin-left: 114px;
+.Recontainer form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+}
+
+.Recontainer form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 4px;
+  background: #303137;
+  color: #fff;
+}
+
+.Recontainer form .row .col .inputBox input:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 2px;
+}
+
+.Recontainer form .submitBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border: #2d6cf9;
+  margin-top: 5px;
+  cursor: pointer;
+  background: #2d6cf9;
+  box-shadow: 0px 2px 20px rgba(21, 130, 222, 0.89);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Recontainer form .submitBtn:hover {
+  background: #2d6cf9;
+  box-shadow: 0px 2px 40px rgba(21, 130, 222, 0.89);
+}
+
+.sociaMediaIcon ul {
+  margin-top: 10px;
+  margin-left: 80px;
+  align-items: center;
+}
+
+.sociaMediaIcon ul li {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+
+  margin-left: 15px;
+  text-align: center;
+
+  font-size: 1.3rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.vl {
+  height: 520px;
+  border-left: 2px dotted #fff;
+}
+
+.loginLink p {
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.loginLink a {
+  color: #47acdf;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.orContText {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.twoFactText {
+  margin-top: 20px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.checkboxdiv {
   position: relative;
+  display: inline;
+}
+.switch {
+  margin-left: 114px;
+  position: absolute;
   display: inline-block;
   width: 30px;
   height: 16px;
   align-items: baseline;
-  
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -218,8 +199,8 @@ margin-left: 114px;
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -230,16 +211,16 @@ margin-left: 114px;
   left: 3px;
   bottom: 3px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #DC2C5D;
+  background-color: #dc2c5d;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #DC2C5D;
+  box-shadow: 0 0 1px #dc2c5d;
 }
 
 input:checked + .slider:before {
@@ -249,10 +230,35 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+.round {
   border-radius: 15px;
 }
 
-.slider.round:before {
+.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 884px) {
+  .Recontainer {
+    grid-column: 2/10;
+    width: 100%;
+    padding: 0px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Recontainer {
+    grid-column: 2/10;
+    width: 100%;
+    padding: 0px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 0px;
+  }
+
+  .vl {
+    display: none;
+  }
 }
